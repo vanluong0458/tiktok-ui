@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+### Cài đặt customize-cra để tuỳ chỉnh cấu hình Webpack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- https://github.com/arackaf/customize-cra -->
+<!-- https://github.com/timarney/react-app-rewired -->
 
-## Available Scripts
+### Cài đặt babel plugin module resolver
 
-In the project directory, you can run:
+<!-- https://github.com/tleunen/babel-plugin-module-resolver -->
 
-### `npm start`
+### Cấu hình để sử dụng .babelrc
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- https://github.com/arackaf/customize-cra/blob/master/api.md -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Cài đặt và cấu hình Prettier trên VS Code
 
-### `npm test`
+<!-- Prettier - Code formatter -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Wrap Component
 
-### `npm run build`
+<!-- 1. Bôi đen
+2. Ctrl + Shift + P
+3. Nhập wrap
+4. Nhập Component wrap + Enter -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cấu hình sử dụng CSS, SASS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- npm i -D sass -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Reset CSS and import font
 
-### `npm run eject`
+<!-- npm install --save normalize.css -->
+<!-- https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Cài đặt React-outer-dom
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- npm i react-router-dom -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- 1. Tạo thư mục routes/index.js
+2. import vào App.js -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Sử dụng classname/bin
 
-## Learn More
+<!-- npm i classnames -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Cài đặt Fontawesome
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- 1. "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    ... }
+2. npm i -->
 
-### Code Splitting
+### TippyJS React để hiển thị tooltip || popper
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- https://github.com/atomiks/tippyjs-react -->
+<!-- 1. npm i @tippyjs/react -->
+<!-- 2. import Tippy from "@tippyjs/react/headless"; -->
 
-### Analyzing the Bundle Size
+### Cách lấy element popper không mất khi không focus
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- setTimeout(() => {
+    debugger;
+}, 5000) -->

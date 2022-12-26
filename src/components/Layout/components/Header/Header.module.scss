@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 var(--default-layout-horizontal-spacer);
 }
 
 .search,
@@ -93,6 +94,29 @@
     &:active {
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+
+// Action
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.btn-action {
+    font-size: 2.2rem;
+    color: #161823;
+    padding: 4px 12px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.user-avatar {
+    border-radius: 999px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    margin-left: 12px;
+    cursor: pointer;
 }
 
 .more-btn {

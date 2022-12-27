@@ -24,6 +24,9 @@ import {
 import AccountItem from "~/components/AccountItem";
 import Button from "~/components/Button";
 import Menu from "~/components/Popper/Menu";
+import { Inbox } from "~/components/Icons";
+import { Messages } from "~/components/Icons";
+import Image from "~/components/Images";
 
 const cx = classNames.bind(styles);
 
@@ -137,15 +140,31 @@ function Header() {
 
         <div className={cx("action")}>
           {currentUser ? (
-            <TooltipTippy
-              content="Upload video"
-              placement="bottom"
-              delay={[0, 200]}
-            >
-              <button className={cx("btn-action")}>
-                <FontAwesomeIcon icon={faCloudUpload} />
-              </button>
-            </TooltipTippy>
+            <>
+              <TooltipTippy
+                content="Upload video"
+                placement="bottom"
+                delay={[0, 200]}
+              >
+                <button className={cx("btn-action")}>
+                  <FontAwesomeIcon icon={faCloudUpload} />
+                </button>
+              </TooltipTippy>
+              <TooltipTippy
+                content="Messages"
+                placement="bottom"
+                delay={[0, 200]}
+              >
+                <button className={cx("btn-action")}>
+                  <Messages />
+                </button>
+              </TooltipTippy>
+              <TooltipTippy content="Inbox" placement="bottom" delay={[0, 200]}>
+                <button className={cx("btn-action")}>
+                  <Inbox />
+                </button>
+              </TooltipTippy>
+            </>
           ) : (
             <>
               <Button text>Upload</Button>
@@ -157,7 +176,7 @@ function Header() {
             onChange={handleMenuOnchange}
           >
             {currentUser ? (
-              <img
+              <Image
                 className={cx("user-avatar")}
                 src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/b5998875075b915dba41f22d45b11caa~c5_100x100.jpeg?x-expires=1671415200&x-signature=BDD5Uy6fxjvJ3xurejc1h7HHi%2FU%3D"
                 alt=""

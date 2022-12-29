@@ -8,7 +8,7 @@ import { HeaderOnly } from "~/components/Layout";
 const publishRoutes = [
   { path: "/", element: Home },
   { path: "/following", element: Following },
-  { path: "/profile", element: Profile },
+  { path: "/@:nickname", element: Profile },
   { path: "/upload", element: Upload, layout: HeaderOnly },
   { path: "/search", element: Search, layout: null },
 ];
